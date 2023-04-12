@@ -20,7 +20,7 @@
 			rel="stylesheet"
 		/>
 		<script type="module" crossorigin src="/team-project/assets/index-4e37fc08.js"></script>
-		<link rel="stylesheet" href="/team-project/assets/index-2c324fef.css">
+		<link rel="stylesheet" href="/team-project/assets/index-ca52d0e7.css">
 	</head>
 
 	<body>
@@ -552,11 +552,7 @@
 							/>
 
 							<img
-
-
-
 								src="/team-project/assets/choco-nut-desctop@1x-1bbae235.jpg"
-
 								alt="picture of chocolate with nuts"
 								class="border"
 							/>
@@ -581,10 +577,7 @@
 							/>
 
 							<img
-
-
 								src="/team-project/assets/choco-mint-dectop@1x-ac8632fd.jpg"
-
 								alt="picture of chocolate with mint"
 								class="border"
 							/>
@@ -599,10 +592,7 @@
 							/>
 
 							<img
-
-
 								src="/team-project/assets/choco-dectop@1x-ce8f8475.jpg"
-
 								alt="picture of chocolate bars"
 								class="border"
 							/>
@@ -636,9 +626,7 @@
 				media="(min-width: 1200px)"
 			/>
 			<img
-
 				src="/team-project/assets/choco-nut-desctop@1x-1bbae235.jpg"
-
 				alt="picture of chocolate with nuts"
 				class="border"
 			/>
@@ -664,9 +652,7 @@
 			/>
 
 			<img
-
 				src="/team-project/assets/choco-mint-dectop@1x-ac8632fd.jpg"
-
 				alt="picture of chocolate with mint"
 				class="border"
 			/>
@@ -674,6 +660,7 @@
 		<button class="buy-now-btn-mobile js-open-modal" data-modal="1" type="button"> Buy now </button>
 	</div>
 </section>
+<div class="overlay js-overlay-modal"></div>
 
 			<section class="review-section" id="chocolate-is-loved">
 	<div class="container">
@@ -726,87 +713,50 @@
 				</p>
 			</li>
 		</ul>
-		<button class="review-btn js-open-modal" data-modal="4" type="button">Leave a review</button>
+		<button class="review-btn" type="button" data-review-open>Leave a review</button>
 	</div>
 </section>
+
 <!-- Modalka Review!!! -->
-<div class="modal modal-review" data-modal="4">
-	<button class="button-close-review js-modal-close" type="button">
-		<svg class="modal-review-svg" width="14px" height="14px">
-			<use href="/team-project/assets/icons-67861462.svg#icon-close-modalka"></use>
-		</svg>
-	</button>
-	<div class="container-review">
-		<h2 class="text-modal-review">
-			LEAVE A REVIEW <br />
-			ABOUT
-			<span class="second-part-text">OUR CHOCOLATE</span>
-		</h2>
-		<form class="review-form">
-			<label class="review-label"
-				><input type="text" name="name" class="input-review" placeholder="Name" required
-			/></label>
+<div class="backdrop is-hidden-review" data-review-backdrop>
+	<div class="modal-review">
+		<button data-review-close class="button-close-review" type="button">
+			<svg class="modal-review-svg" width="14px" height="14px">
+				<use href="/team-project/assets/icons-67861462.svg#icon-close-modalka"></use>
+			</svg>
+		</button>
+		<div class="container-review">
+			<h2 class="text-modal-review">
+				LEAVE A REVIEW <br />
+				ABOUT
+				<span class="second-part-text">OUR CHOCOLATE</span>
+			</h2>
+			<form class="review-form">
+				<label class="review-label"
+					><input type="text" name="name" class="input-review" placeholder="Name" required
+				/></label>
 
-			<label class="review-label"
-				><input type="email" name="email" class="input-review" placeholder="Email" required
-			/></label>
-			<label class="review-label">
-				<span class="review-tel">
-					<input type="tel" name="tel" class="input-review tel" placeholder="Phone number" required />
-					<span class="icons-review">
-						<svg class="review-ukraine">
-							<use href="/team-project/assets/icons-67861462.svg#icon-ukraine"></use>
-						</svg>
-						<span class="phone-start">+380</span>
+				<label class="review-label"
+					><input type="email" name="email" class="input-review" placeholder="Email" required
+				/></label>
+				<label class="review-label">
+					<span class="review-tel">
+						<input type="tel" name="tel" class="input-review tel" placeholder="Phone number" required />
+						<span class="icons-review">
+							<svg class="review-ukraine">
+								<use href="/team-project/assets/icons-67861462.svg#icon-ukraine"></use>
+							</svg>
+							<span class="phone-start">+380</span>
+						</span>
 					</span>
-				</span>
-			</label>
-			<label class="review-label-textarea">
-				<textarea name="text" id="text" placeholder="Enter text" class="input-review-textarea"></textarea>
-			</label>
-			<button type="submit" class="submit-form-review">Send</button>
-		</form>
+				</label>
+				<label class="review-label-textarea">
+					<textarea name="text" id="text" placeholder="Enter text" class="input-review-textarea"></textarea>
+				</label>
+				<button data-review-close type="submit" class="submit-form-review">Send</button>
+			</form>
+		</div>
 	</div>
-	<!-- </div> -->
-</div>
-<div class="modal modal-review" data-modal="4">
-	<button class="button-close-review js-modal-close" type="button">
-		<svg class="modal-review-svg" width="14px" height="14px">
-			<use href="../img/svg/icons.svg#icon-close-modalka"></use>
-		</svg>
-	</button>
-	<div class="container-review">
-		<h2 class="text-modal-review">
-			LEAVE A REVIEW <br />
-			ABOUT
-			<span class="second-part-text">OUR CHOCOLATE</span>
-		</h2>
-		<form class="review-form">
-			<label class="review-label"
-				><input type="text" name="name" class="input-review" placeholder="Name" required
-			/></label>
-
-			<label class="review-label"
-				><input type="email" name="email" class="input-review" placeholder="Email" required
-			/></label>
-			<label class="review-label">
-				<span class="review-tel">
-					<input type="tel" name="tel" class="input-review tel" placeholder="Phone number" required />
-					<span class="icons-review">
-						<svg class="review-ukraine">
-							<use href="../img/svg/icons.svg#icon-ukraine"></use>
-						</svg>
-						<span class="phone-start">+380</span>
-					</span>
-				</span>
-			</label>
-			<label class="review-label-textarea">
-				<textarea name="text" id="text" placeholder="Enter text" class="input-review-textarea"></textarea>
-			</label>
-			<button type="submit" class="submit-form-review">Send</button>
-		</form>
-	</div>
-	<!-- </div> -->
 </div>
 
 			<section class="subscribe-section">
@@ -1138,13 +1088,15 @@
       Submit
     </button>
   </form>
+  
 		<!-- <load src="partials/modal-review.html"> -->
-		
+
 		<!-- our-products-slider -->
 
 		<!-- /our-products-slider -->
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="./js/modal-review.js"></script>
 		
 	</body>
 </html>
